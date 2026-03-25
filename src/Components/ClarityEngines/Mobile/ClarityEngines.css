@@ -1,0 +1,140 @@
+/* =========================
+   MOBILE 425px → 320px
+========================= */
+@media (max-width: 425px) {
+
+  /* ===== CONTAINER ===== */
+  .ClarityEngines-PC {
+    width: 100%;
+    padding: 12px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-sizing: border-box;
+  }
+
+  /* Section heading */
+  .des {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* Section heading font size */
+  .des .pls-600 {
+    font-size: 14px;
+  }
+
+  /* ===== GRID LAYOUT ===== */
+  .Engines {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack vertically */
+    gap: 12px;
+    width: 70%;
+    padding: 0 58px; /* Horizontal padding inside grid */
+    margin: 0 auto;
+  }
+
+  /* ===== BUTTONS & BOXES ===== */
+  .AIM, .VEY, .DSCORE, .DIP,
+  .BoxA, .BoxB, .BoxC, .BoxD {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 13px; /* Use class-specific font size */
+    height: 40px;
+    box-sizing: border-box;
+  }
+
+  .BoxA, .BoxB, .BoxC, .BoxD {
+    height: 80px;
+  }
+
+  /* Colors for buttons */
+  .AIM { background:#F8690B; color:#fff; border:1px solid #F8690B; }
+  .VEY { background:#F3CC5E; color:#000; border:1px solid #F3CC5E; }
+  .DSCORE { background:#58A664; color:#fff; border:1px solid #58A664; }
+  .DIP { background:#0A6AED; color:#fff; border:1px solid #0A6AED; }
+
+  /* Colors for boxes */
+  .BoxA { background:#FEF0E7; border:1px solid #F8690C; }
+  .BoxB { background:#FEFAEF; border:1px solid #F4CA61; }
+  .BoxC { background:#EEF6EF; border:1px solid #59A662; }
+  .BoxD { background:#E6F0FE; border:1px solid #0A69F1; }
+}
+
+/* =========================
+   SMALLER PHONES ≤375px
+========================= */
+@media (max-width: 375px) {
+
+  .ClarityEngines-PC {
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .Engines {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    padding: 0 2px;
+    gap: 10px;
+    margin: 0 auto;
+  }
+
+  .AIM, .VEY, .DSCORE, .DIP,
+  .BoxA, .BoxB, .BoxC, .BoxD {
+    font-size: 12px;
+    padding: 8px;
+    height: 38px;
+  }
+
+  .BoxA, .BoxB, .BoxC, .BoxD {
+    height: 70px;
+  }
+
+  /* Section heading font size */
+  .des .pls-600 {
+    font-size: 13px;
+  }
+}
+
+/* =========================
+   SMALLEST PHONES ≤320px
+========================= */
+@media (max-width: 320px) {
+
+  .ClarityEngines-PC {
+    padding: 8px;
+    gap: 10px;
+  }
+
+  .Engines {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    padding: 0 2px;
+    gap: 8px;
+    margin: 0 auto;
+  }
+
+  .AIM, .VEY, .DSCORE, .DIP,
+  .BoxA, .BoxB, .BoxC, .BoxD {
+    font-size: 11px;
+    padding: 6px;
+    height: 35px;
+  }
+
+  .BoxA, .BoxB, .BoxC, .BoxD {
+    height: 60px;
+  }
+
+  /* Section heading font size */
+  .des .pls-600 {
+    font-size: 12px;
+  }
+}

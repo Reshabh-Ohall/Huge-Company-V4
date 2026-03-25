@@ -1,0 +1,25 @@
+import './ClarityEngines.css'
+
+export default function ClarityEngines() {
+	return (
+		<div className='ClarityEngines-PC'>
+			<div className='des center'>
+				<h1 className='pls-600'>The Four Engines of Clarity</h1>
+			</div>
+
+			<div className='Engines pls center'>
+				<div className='AIM'><h1>AIM Logic</h1></div>
+				<div className='VEY'><h1>VEY Formula</h1></div>
+				<div className='DSCORE'><h1>DSCORE Index</h1></div>
+				<div className='DIP'><h1>DIP Ecosystem</h1></div>
+			</div>
+
+			<div className='Engines-Box center pls'>
+				<div className='BoxA'><h1>AIM Logic</h1></div>
+				<div className='BoxB'><h1>VEY Formula</h1></div>
+				<div className='BoxC'><h1>DSCORE Index</h1></div>
+				<div className='BoxD'><h1>DIP Ecosystem</h1></div>
+			</div>
+		</div>
+	)
+}

@@ -1,0 +1,233 @@
+/* ==================== TOP TAGLINE ==================== */
+.TaglineP {
+  display: flex;
+  justify-content: center;
+}
+
+.TaglineC {
+  display: inline-block;
+  font-size: 64px;
+  background: linear-gradient(to right,
+    #FF6500,
+    #D77945,
+    #D48E71,
+    #C6B355,
+    #FFE500,
+    #87CB33,
+    #0062FF
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* ==================== HERO SECTION ==================== */
+.Hero {
+  background-color: #1b4e9b;
+  text-align: center;
+}
+
+.S1 {
+  padding: 40px 0 0 0;
+  font-size: 64px;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.S2 {
+  font-size: 32px;
+  -webkit-text-fill-color: #ffffff;
+}
+
+.S3 {
+  font-size: 20px;
+  -webkit-text-fill-color: #ffffff;
+}
+
+/* ==================== PARAGRAPH ==================== */
+.P-box {
+  text-align: center;
+}
+
+.P1 {
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  line-height: 42px;
+  color: #ffffff;
+  max-width: 1100px;
+}
+
+.indent {
+  display: inline-block;
+  padding-left: 250px;
+}
+
+/* ==================== BUTTONS ==================== */
+.buttons-pc {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 20px;
+  flex-wrap: wrap; /* wrap on small screens */
+  width: 100%;
+}
+
+/* Button styling */
+.buttons-pc .Define,
+.buttons-pc .VEY-button {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+  border: 2px solid white;
+  transition: all 0.25s ease;
+  width: auto;
+}
+
+/* Color variables */
+.buttons-pc {
+  --define-bg: white;
+  --define-color: #0a4d9a;
+  --vey-button-bg: transparent;
+  --vey-button-color: white;
+}
+
+.buttons-pc:has(.VEY-button:hover) {
+  --define-bg: transparent;
+  --define-color: white;
+  --vey-button-bg: white;
+  --vey-button-color: #0a4d9a;
+}
+
+.buttons-pc .Define { background: var(--define-bg); color: var(--define-color); }
+.buttons-pc .VEY-button { background: var(--vey-button-bg); color: var(--vey-button-color); }
+
+.buttons-pc .Define:hover,
+.buttons-pc .VEY-button:hover { transform: scale(1.05); }
+
+/* ==================== LETTER BAR ==================== */
+.Letter {
+  margin: 20px auto 0;
+  padding: 14px 0;
+  border-top: 0.5px solid #e3e3e3;
+  border-bottom: 0.5px solid #e3e3e3;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 15px;
+  width: 100%;
+  max-width: 1440px;
+  color: #111;
+  box-sizing: border-box;
+}
+
+.letter-left {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.letter-title {
+  text-decoration: none;
+  color: #1b4e9b;
+}
+
+.letter-title:hover {
+  font-style: italic;
+  text-decoration: underline;
+  color: #FF6500;
+}
+
+.letter-right a.read-now {
+  color: #222;
+  opacity: 0.85;
+  font-size: 15px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.letter-right a.read-now:hover {
+  opacity: 1;
+  text-decoration: underline;
+  color: #FF6500;
+}
+
+/* ==================== MEDIA QUERIES ==================== */
+
+/* Large screens 1795px → 1441px */
+@media (max-width: 1795px) {
+  .Letter { padding: 14px 250px; font-size: 15px; }
+  .TaglineC, .S1 { font-size: 56px; }
+  .S2 { font-size: 28px; }
+  .P1 { max-width: 90%; }
+  .indent { padding-left: 150px; }
+}
+
+/* Desktop 1440px → 1025px */
+@media (max-width: 1440px) {
+  .Letter { padding: 14px 200px; font-size: 14px; }
+  .TaglineC, .S1 { font-size: 48px; }
+  .S2 { font-size: 24px; }
+  .P1 { max-width: 85%; font-size: 22px; }
+  .indent { padding-left: 120px; }
+  .buttons-pc .Define, .buttons-pc .VEY-button { font-size: 22px; padding: 0.65rem 1.3rem; }
+}
+
+/* Small desktops / laptops 1024px → 769px */
+@media (max-width: 1024px) {
+  .Letter { padding: 14px 120px; font-size: 13px; }
+  .TaglineC, .S1 { font-size: 42px; }
+  .S2 { font-size: 20px; }
+  .P1 { max-width: 80%; font-size: 20px; }
+  .indent { padding-left: 80px; }
+  .buttons-pc .Define, .buttons-pc .VEY-button { font-size: 20px; padding: 0.6rem 1.2rem; }
+}
+
+/* Tablet 768px → 426px */
+@media (max-width: 768px) {
+  .Letter { padding: 14px 40px; font-size: 12px; flex-direction: column; gap: 6px; text-align: center; }
+  .letter-left, .letter-right { padding: 0; justify-content: center; width: 100%; }
+
+  .TaglineC, .S1 { font-size: 36px; }
+  .S2 { font-size: 18px; }
+  .P1 { max-width: 90%; font-size: 18px; line-height: 32px; }
+  .indent { padding-left: 50px; }
+
+  .buttons-pc { flex-direction: column; align-items: center; gap: 0.75rem; }
+  .buttons-pc .Define, .buttons-pc .VEY-button { width: 90%; font-size: 16px; padding: 0.5rem 1rem; }
+}
+
+/* Mobile Large 425px → 376px */
+@media (max-width: 425px) {
+  .Letter { padding: 14px 20px; font-size: 11px; }
+  .TaglineC, .S1 { font-size: 28px; }
+  .S2 { font-size: 16px; }
+  .P1 { font-size: 16px; max-width: 95%; line-height: 28px; }
+  .indent { padding-left: 30px; }
+
+  .buttons-pc .Define, .buttons-pc .VEY-button { width: 95%; font-size: 14px; padding: 0.45rem 0.9rem; }
+}
+
+/* Mobile Medium 375px */
+@media (max-width: 375px) {
+  .Letter { font-size: 10px; }
+  .TaglineC, .S1 { font-size: 24px; }
+  .S2 { font-size: 14px; }
+  .P1 { font-size: 14px; line-height: 24px; }
+  .indent { padding-left: 20px; }
+  .buttons-pc .Define, .buttons-pc .VEY-button { width: 95%; font-size: 13px; padding: 0.4rem 0.8rem; }
+}
+
+/* Mobile Small 320px */
+@media (max-width: 320px) {
+  .Letter { font-size: 9px; }
+  .TaglineC, .S1 { font-size: 20px; }
+  .S2 { font-size: 12px; }
+  .P1 { font-size: 12px; line-height: 20px; }
+  .indent { padding-left: 10px; }
+  .buttons-pc .Define, .buttons-pc .VEY-button { width: 95%; font-size: 12px; padding: 0.35rem 0.7rem; }
+}

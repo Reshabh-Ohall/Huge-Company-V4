@@ -1,0 +1,160 @@
+/* Contact row */
+.contact-pc {
+  -webkit-text-fill-color: #1B4E9B;
+  font-size: 16px;
+  margin-right: 280px;
+  font-weight: 700;
+  width: 91.8%;
+}
+
+.contact-ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+
+}
+
+.contact {
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.email,
+.cell-phone {
+  transition: transform 0.2s ease-in-out;
+}
+
+.email:hover,
+.cell-phone:hover {
+  -webkit-text-fill-color: #FF6500;
+  transform: scale(1.2);
+}
+
+
+/* Search container */
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem; /* spacing from contact row */
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 80%; /* adjust as needed */
+  border: 1px solid #1B4E9B;
+  border-radius: 8px;
+  padding: 0.3rem 0.5rem;
+  background-color: white;
+}
+
+/* Search input */
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-family: var(--pls); /* your Plus Jakarta Sans */
+  font-size: 0.9rem;
+}
+
+/* Search icon */
+.search-icon {
+  color: #1B4E9B;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+/* Talk to Us button */
+.sButton {
+  background-color: #1B4E9B;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.sButton:hover {
+  opacity: 0.85;
+}
+
+/* Talk to Us button */
+.Download {
+  background-color: #1B4E9B;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.Download:hover {
+  opacity: 0.85;
+}
+
+/*Tweaks @ Breakpoints*/
+@media screen and (max-width: 425px) {
+  .contact-pc {
+    font-size: 14px;
+  }
+
+  .contact-ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-left: 24px;
+    padding-left: 60px;
+  }
+
+  .sButton {
+    font-size: 10px;
+  }
+
+  .Download {
+    font-size: 10px;
+  }
+
+  .search-box {
+    margin-left: 22.5px;
+  }
+
+  .search-input {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sButton {
+    font-size: 10px;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .Download {
+    font-size: 10px;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .search-input {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .sButton {
+    font-size: 8px;
+  }
+
+  .Download {
+    font-size: 8px;
+  }
+
+  .search-input {
+    width: 20px;
+  }
+}

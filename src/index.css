@@ -1,0 +1,44 @@
+.center {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.BC-DBlue {
+  color: #1B4E9B;
+}
+
+.BC-LGrey {
+  color: #A8A8A9;
+}
+
+.BC-DGrey {
+  color: #454545;
+}
+
+.BC-DYellow {
+  color: #F5CA5B;
+}
+
+.BC-Orange {
+  color: #F5CA63;
+}
+
+.BC-LYellow {
+  color: #F5CA62;
+}
+
+.BC-Green {
+  color: #55A863;
+}
+
+.BC-LBlue {
+  color: #0C68ED;
+}
+
+.BC-White {
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+}

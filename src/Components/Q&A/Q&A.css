@@ -1,0 +1,156 @@
+/* ===== BASE (Desktop / ≥ 769px) ===== */
+.Q-A {
+  display: flex;
+  justify-content: center;
+  gap: 128px;
+  width: 100%;
+  background-color: #E6EDF5;
+  margin: 20px 0 0 0;
+  flex-wrap: wrap;
+}
+
+.q1, .q2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.q1-l,
+.q2-l {
+  list-style: none;
+  border: 1px solid #1b4e9b;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 20px 24px;
+  justify-content: center;
+  align-content: center;
+}
+
+.q1-l {
+  width: 329px;
+  height: 200px;
+}
+
+.q2-l {
+  width: 308px;
+  height: 200px;
+}
+
+.q1-q,
+.q2-q {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.q1-a,
+.q2-a {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* ===== TABLET (768 → 426) ===== */
+@media (max-width: 768px) {
+  .Q-A {
+    gap: 64px;
+    margin: 16px 0 0 0;
+  }
+
+  .q1-l,
+  .q2-l {
+    width: 260px;
+    height: 160px;
+    font-size: 14px;
+    padding: 16px 20px;
+  }
+
+  .q1-q,
+  .q2-q {
+    font-size: 20px;
+  }
+
+  .q1-a,
+  .q2-a {
+    font-size: 14px;
+  }
+}
+
+/* ===== MOBILE LARGE (425 → 376) ===== */
+@media (max-width: 425px) {
+  .Q-A {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .q1, .q2 {
+    width: 100%;
+    align-items: center;
+  }
+
+  .q1-l,
+  .q2-l {
+    width: 90%;
+    max-width: 260px;
+    height: auto;
+    font-size: 14px;
+    padding: 14px 18px;
+  }
+
+  .q1-q,
+  .q2-q {
+    font-size: 18px;
+  }
+
+  .q1-a,
+  .q2-a {
+    font-size: 13px;
+  }
+}
+
+/* ===== MOBILE MEDIUM (375px) ===== */
+@media (max-width: 375px) {
+  .Q-A {
+    gap: 24px;
+  }
+
+  .q1-l,
+  .q2-l {
+    width: 95%;
+    font-size: 13px;
+    padding: 12px 16px;
+  }
+
+  .q1-q,
+  .q2-q {
+    font-size: 16px;
+  }
+
+  .q1-a,
+  .q2-a {
+    font-size: 12px;
+  }
+}
+
+/* ===== MOBILE SMALL (320px) ===== */
+@media (max-width: 320px) {
+  .Q-A {
+    gap: 16px;
+  }
+
+  .q1-l,
+  .q2-l {
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 14px;
+  }
+
+  .q1-q,
+  .q2-q {
+    font-size: 14px;
+  }
+
+  .q1-a,
+  .q2-a {
+    font-size: 11px;
+  }
+}

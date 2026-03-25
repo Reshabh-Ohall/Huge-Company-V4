@@ -1,0 +1,62 @@
+/*./src/Components/Header/Desktop/dcss.css/*/
+
+/*2560px*/
+.hdr-icons-2560 {
+	list-style: none;
+	padding-right: 210px;
+}
+
+.SMI-2560 {
+	width: 32px;
+	height: auto;
+	padding-right: 16px;
+	color: #1B4E9B;
+}
+
+
+
+
+/*1440px*/
+.hdr-icons-1440 {
+	list-style: none;
+	padding-right: 125px;
+}
+
+.SMI-1440 {
+	width: 24px;
+	height: auto;
+	padding-right: 12px;
+	color: #1B4E9B;
+}
+
+
+
+
+/*1024px*/
+.hdr-icons-1024 {
+	list-style: none;
+	padding-right: 62.5px;
+}
+
+.SMI-1024 {
+	width: 20px;
+	height: auto;
+	padding-right: 10px;
+	color: #1B4E9B;
+}
+
+
+
+
+/*768px*/
+.hdr-icons-768 {
+	list-style: none;
+	padding-right: 31.25px;
+}
+
+.SMI-768 {
+	width: 16px;
+	height: auto;
+	padding-right: 8px;
+	color: #1B4E9B;
+}

@@ -1,0 +1,61 @@
+/*./src/Components/Header/Mobile/mcss.css*/
+
+/*425px*/
+.hdr-425 {
+	justify-content: center;
+	margin-right: 29px;
+}
+
+.hdr-icons-425 {
+	list-style: none;
+}
+
+.SMI-425 {
+	color: #1B4E9B;
+	list-style: none;
+	width: 20px;
+	height: auto;
+	padding: 0 10px 0 0;
+}
+
+
+
+
+/*375px*/
+.hdr-375 {
+	justify-content: center;
+	margin-right: 28px;
+}
+
+.hdr-icons-375 {
+	list-style: none;
+}
+
+.SMI-375 {
+	color: #1B4E9B;
+	list-style: none;
+	width: 19px;
+	height: auto;
+	padding: 0 9px 0 0;
+}
+
+
+
+
+/*320px*/
+.hdr-320 {
+	justify-content: center;
+	margin-right: 27px;
+}
+
+.hdr-icons-320 {
+	list-style: none;
+}
+
+.SMI-320 {
+	color: #1B4E9B;
+	list-style: none;
+	width: 18px;
+	height: auto;
+	padding: 0 8px 0 0;
+}

@@ -1,0 +1,85 @@
+/* ===== CONTAINER ===== */
+.ClarityEngines-PC {
+  width: 100%;
+  max-width: 1200px; /* Set a max-width to prevent the content from stretching too much */
+  margin: 0 auto;  /* Center the container */
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 16px;
+}
+
+.des {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ===== GRID LAYOUT ===== */
+.Engines1, .Engines2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 16px;
+  width: 100%;
+}
+
+/* ===== BUTTONS & BOXES ===== */
+.AIM, .VEY, .DSCORE, .DIP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px; /* Increased height for spacing */
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Colors preserved for each item */
+.AIM { background:#F8690B; color:#fff; border:1px solid #F8690B; }
+.VEY { background:#F3CC5E; color:#000; border:1px solid #F3CC5E; }
+.DSCORE { background:#58A664; color:#fff; border:1px solid #58A664; }
+.DIP { background:#0A6AED; color:#fff; border:1px solid #0A6AED; }
+
+/* BOXES */
+.BoxA, .BoxB, .BoxC, .BoxD {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Box Colors */
+.BoxA { background:#FEF0E7; border:1px solid #F8690C; }
+.BoxB { background:#FEFAEF; border:1px solid #F4CA61; }
+.BoxC { background:#EEF6EF; border:1px solid #59A662; }
+.BoxD { background:#E6F0FE; border:1px solid #0A69F1; }
+
+/* ===== TEXT SIZING ===== */
+h1 {
+  font-size: clamp(14px, 4vw, 18px); /* Dynamic scaling */
+  margin: 0;
+}
+
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+@media (max-width: 768px) {
+  .AIM, .VEY, .DSCORE, .DIP {
+    font-size: 12px;
+  }
+  .BoxA, .BoxB, .BoxC, .BoxD {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 600px) {
+  .AIM, .VEY, .DSCORE, .DIP {
+    font-size: 10px;
+  }
+  .BoxA, .BoxB, .BoxC, .BoxD {
+    font-size: 10px;
+  }
+}

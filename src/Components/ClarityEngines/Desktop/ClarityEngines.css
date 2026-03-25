@@ -1,0 +1,85 @@
+/********** BASE (>=2560 / Default) **********/
+.ClarityEngines-PC {
+  gap: 32px;
+}
+
+.des {
+  justify-content: center;
+}
+
+/* Engines wrapper rows */
+.Engines,
+.Engines-Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Titles inside blocks */
+.Engines,
+.Engines-Box {
+  font-size: 14px;
+  margin: 0;
+  text-align: center;
+}
+
+/* BUTTON BLOCKS */
+.AIM, .VEY, .DSCORE, .DIP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  height: 48px;
+  padding: 0 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  margin: 0 0 12px 0;
+}
+
+/* Colors */
+.AIM { background:#F8690B; color:#fff; border:1px solid #F8690B; }
+.VEY { background:#F3CC5E; color:#000; border:1px solid #F3CC5E; }
+.DSCORE { background:#58A664; color:#fff; border:1px solid #58A664; }
+.DIP { background:#0A6AED; color:#fff; border:1px solid #0A6AED; }
+
+/* BOXES */
+.BoxA, .BoxB, .BoxC, .BoxD {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 160px;
+  height: 120px;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Box Colors */
+.BoxA { background:#FEF0E7; border:1px solid #F8690C; }
+.BoxB { background:#FEFAEF; border:1px solid #F4CA61; }
+.BoxC { background:#EEF6EF; border:1px solid #59A662; }
+.BoxD { background:#E6F0FE; border:1px solid #0A69F1; }
+
+
+/********** <= 1440px (DESKTOP WIDE) **********/
+@media (max-width: 1440px) {
+  /* NOTHING visually changes yet */
+  /* We just allow wrapping if screen is narrower */
+  .Engines div,
+  .Engines-Box div {
+    flex: 0 0 auto;
+  }
+}
+
+
+/********** <= 1024px (SMALL DESKTOP / LAPTOP) **********/
+@media (max-width: 1024px) {
+  /* Layout shifts to 2 per row */
+  .Engines div,
+  .Engines-Box div {
+    flex: 0 0 auto;
+  }
+}

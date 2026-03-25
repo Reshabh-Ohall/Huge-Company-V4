@@ -1,0 +1,343 @@
+/* ======================================================================  */
+/*  File: /src/Components/Navigation/Navigation.css                                                                                       */
+/*  Responsive Navbar: 2560px – 768px                                                                                                                  */
+/*  This Version of Site_V4 can be UP-ed to the Web Servers you may change the styles if you like.*/
+/* ====================================================================== */
+
+/* ===== Base Navbar ===== */
+.nav {
+  width: 100vw;                   /* full viewport width */
+  display: flex;
+  justify-content: center;        /* center inner wrapper */
+  align-items: center;
+  padding: 0 clamp(20px, 4vw, 80px);
+  box-sizing: border-box;
+  height: clamp(60px, 8vh, 90px);
+  font-family: 'Effra', sans-serif;
+}
+
+/* Inner wrapper to limit max content width */
+.nav-inner {
+  display: flex;
+  width: 100%;
+  max-width: 2400px;              /* content max width */
+  justify-content: space-between;  /* left-right spacing */
+  align-items: center;
+  gap: 0;                          /* remove unwanted gap */
+  box-sizing: border-box;
+}
+
+/* ===== Brand Section ===== */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 2vw, 30px);   /* spacing between logo & title */
+  flex-shrink: 0;                 /* prevent shrinking */
+}
+
+.nav-logo {
+  width: auto;
+  height: auto;
+  max-width: 120px;
+  max-height: 60px;
+}
+
+.nav-title h1 {
+  margin: 0;
+  font-size: clamp(24px, 2vw, 36px);
+  color: #1B4E9B;
+}
+
+/* ===== Menu Section ===== */
+.nav-menu {
+  display: flex;
+  margin-left: auto;              /* push menu to right */
+  flex-wrap: nowrap;              /* prevent wrapping */
+  gap: clamp(16px, 2vw, 40px);   /* spacing between items */
+  list-style: none;
+  padding: 0;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.nav-menu li {
+  font-size: clamp(14px, 0.9vw, 20px);
+  cursor: pointer;
+  padding-top: 7px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menu-hover:hover {
+  transform: scale(1.2);
+  -webkit-text-fill-color: #FF6500;
+}
+
+/* ===== Brand Hover ===== */
+.bcard-hover:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* ===== Optional Right Button ===== */
+.nav-btn {
+  padding: clamp(6px, 0.6vw, 12px) clamp(12px, 1vw, 24px);
+  font-size: clamp(14px, 0.9vw, 18px);
+  border: 1px solid #333;
+  background: transparent;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* ====================================================================== */
+/* ===== Breakpoints ===== */
+
+/* 2560px+ - ultra large desktop */
+@media (min-width: 2560px) {
+  .nav-inner { max-width: 2400px; }
+  .nav-logo { max-width: 120px; max-height: 60px; }
+  .nav-title { font-size: 36px; }
+  .nav-menu { gap: 40px; }
+}
+
+/* 1440px — large desktop / laptop */
+@media (max-width: 2559px) and (min-width: 1440px) {
+  .nav-inner { max-width: 1300px; }
+  .nav-logo { max-width: 100px; max-height: 50px; }
+  .nav-title { font-size: 24px; }
+  .nav-menu { gap: clamp(12px, 2vw, 30px); }
+}
+
+/* 1024px — tablet landscape */
+@media (max-width: 1439px) and (min-width: 1024px) {
+  .nav-inner { max-width: 1000px; }
+  .nav-logo { max-width: 90px; max-height: 45px; }
+  .nav-title { font-size: 24px; }
+  .nav-menu { gap: clamp(10px, 2vw, 24px); }
+}
+
+/* 768px — tablet portrait */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .nav-inner { max-width: 800px; }
+  .nav-logo { max-width: 80px; max-height: 40px; }
+  .nav-title { font-size: 20px; }
+  .nav-menu { gap: clamp(8px, 2vw, 20px); }
+}
+
+/* 767px — 650px: small tablets / large mobiles */
+@media (max-width: 767px) and (min-width: 650px) {
+  .nav-inner { max-width: 700px; padding: 0 15px; }
+  .nav-logo { max-width: 70px; max-height: 35px; }
+  .nav-title { font-size: 16px; }
+  .nav-menu { gap: clamp(6px, 2vw, 16px); }
+  .nav-menu li { font-size: clamp(12px, 0.8vw, 16px); }
+}
+
+@media (max-width: 650px) {
+  .nav-inner { max-width: 600px; padding: 0 10px; }
+  .nav-logo { max-width: 70px; max-height: 40px; }
+  .nav-title { font-size: 14px; }
+
+  .nav-menu {
+    display: flex;
+    flex-wrap: wrap;               /* allow multiple rows */
+    justify-content: space-between;/* spread items in each row */
+    gap: 8px 12px;                 /* vertical | horizontal spacing */
+    margin-left: 0;                /* reset any auto margin */
+  }
+
+  /* ===== Row 1: items 1–4 ===== */
+  .nav-menu li:nth-child(-n+4) {
+    flex: 1 1 calc(25% - 12px);   /* 4 items per row → 25% width each minus gap */
+    text-align: center;
+    padding: 1px 0;
+  }
+
+  /* ===== Row 2: items 5–8 ===== */
+  .nav-menu li:nth-child(n+5) {
+    flex: 1 1 calc(25% - 12px);   /* next 4 items, second row */
+    text-align: center;
+    padding: 1px 0;
+  }
+
+  .nav-menu li {
+    font-size: clamp(10px, 3vw, 14px);
+  }
+}
+
+/* ====================================================================== */
+/* ===== Mobile (425, 375, 320) breakpoints will be added later ===== */
+/* Hide mobile-actions by default */
+.mobile-actions {
+  display: none;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Mobile ≤425px */
+@media (max-width: 425px) {
+  /* Hide the regular nav menu (horizontal or 2-row) */
+  .nav-menu {
+    display: none !important;
+  }
+
+  /* Show mobile-actions: hamburger + search */
+  .mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* Hamburger menu styling */
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #1B4E9B; /* BC-Blue fallback */
+    border-radius: 2px;
+  }
+
+  /* Search icon */
+  .nav-search {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #1B4E9B; /* BC-Blue */
+  }
+
+  /* Show vertical menu when active */
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  .nav-menu.active li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+/* Navbar container for mobile dropdown */
+.nav-inner {
+  position: relative; /* make sure dropdown menu is positioned relative to this */
+}
+
+/* ====================== Mobile (≤425px) ====================== */
+@media (max-width: 425px) {
+  /* Hide regular nav menu by default */
+  .nav-menu {
+    display: none !important;        /* hidden initially */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+  }
+
+  /* Show menu when hamburger clicked */
+  .nav-menu.active {
+    display: flex !important;
+  }
+
+  /* Menu items styling */
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px; /* adjust if needed */
+  }
+
+  /* Show hamburger + search only */
+  .mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .hamburger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #1B4E9B; /* BC-Blue */
+    border-radius: 2px;
+  }
+
+  .nav-search {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    color: #1B4E9B; /* BC-Blue */
+  }
+
+  /* Ensure dropdown is positioned relative to nav-inner */
+  .nav-inner {
+    position: relative;
+  }
+}
+
+
+/* Mobile ultra-small screens */
+@media (max-width: 320px) {
+  .nav-logo {
+    max-width: 50px;
+    max-height: 25px;
+  }
+
+  .nav-title {
+    font-size: 2px;
+    padding: 0;
+  }
+
+  .nav-menu.active li {
+    font-size: 12px; /* smaller menu items */
+    padding: 8px 0;
+  }
+
+  .nav-search {
+    font-size: 18px; /* slightly smaller search icon */
+  }
+
+  .hamburger {
+    width: 20px;
+    height: 16px;
+  }
+
+  .hamburger span {
+    height: 2px;
+  }
+}
