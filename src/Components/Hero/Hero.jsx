@@ -4,7 +4,7 @@ export default function Hero() {
 	return (
 		<div>
 			{/* Top Tagline */}
-			<div className='top-section TaglineP'>
+			<div className='TaglineP'>
 				<p className='pls-800 TaglineC'>Grow Clarity</p>
 			</div>
 

@@ -3,8 +3,11 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import './Search.css';
 import { useState, useEffect } from 'react';
 import TalkForm from '../Talk to Us/talk-form.jsx';
+import { useNavigate } from "react-router-dom";
+
 
 export default function Search() {
+  const navigate = useNavigate();
   const [isSmall, setIsSmall] = useState(window.innerWidth <= 425);
   const [isTalkOpen, setIsTalkOpen] = useState(false);
 
@@ -48,10 +51,18 @@ export default function Search() {
                 : 'Search information to get the right document clarity'
             }
           />
-          <button className='sButton pls' onClick={() => setIsTalkOpen(true)}>
+          <button 
+            className='sButton pls' 
+            onClick={() => setIsTalkOpen(true)}
+          >
             Talk to Us
           </button>
-          <button className='sButton pls' onClick="window.location.href='https://hugecompany.in/Download'">Download</button>
+          <button
+            className='sButton pls'
+            onClick={() => navigate("/Download")}
+          >
+            Download
+          </button>
         </div>
       </div>
 

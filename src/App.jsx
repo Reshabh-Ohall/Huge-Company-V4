@@ -1,22 +1,17 @@
-import DynamicHeader from './Components/Header/DUI'
-import Navbar from './Components/Navigation/Navbar'
-import Search from './Components/Search/Search'
-import Hero from './Components/Hero/Hero'
-import QA from './Components/Q&A/Q&A'
-import ClarityEngines from './Components/ClarityEngines/DUI'
-import Footer from './Components/Footer/Footer'
-import './App.css'
+import { Routes, Route } from "react-router-dom"
+import Home from "./Pages/Home"
+import Download from "./Pages/Download"
+import 'tachyons';
+import './App.css';
 
 function App() {
   return (
     <>
-      <DynamicHeader />
-      <Navbar />
-      <Search /> 
-      <Hero />
-      <QA />
-      <ClarityEngines />
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/Download" element={<Download />} />
+      </Routes>
     </>
   )
 }
