@@ -5,62 +5,64 @@ import ButtonGroup from '@mui/joy/ButtonGroup';
 import DynamicHeader from '../Header/DUI';
 import Navbar from '../Navigation/Navbar';
 import Search from '../Search/Search';
-import './Download.css';
 import { useNavigate } from 'react-router-dom';
+import './Download.css';
 
 export default function Download() {
   const navigate = useNavigate();
 
-  const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+  const groups = [
+    { label: 'A-F', letters: ['A','B','C','D','E','F'] },
+    { label: 'G-M', letters: ['G','H','I','J','K','L','M'] },
+    { label: 'N-T', letters: ['N','O','P','Q','R','S','T'] },
+    { label: 'U-Z', letters: ['U','V','W','X','Y','Z'] }
+  ];
 
-  // split into 4 cards max
-  const chunkSize = Math.ceil(letters.length / 4);
-  const chunks = [];
+  const handleLetterClick = (group, letter) => {
+    navigate(`/${group.toLowerCase()}/${letter.toLowerCase()}`);
+  };
 
-  for (let i = 0; i < letters.length; i += chunkSize) {
-    chunks.push(letters.slice(i, i + chunkSize));
-  }
-
-  const handleLetterClick = (letter) => {
-    navigate(`/a-f/${letter.toLowerCase()}`);
+  const handleGo = (group) => {
+    navigate(`/${group.toLowerCase()}`);
   };
 
   return (
     <>
-      <div>
-        <DynamicHeader />
-        <Navbar />
-        <Search />
-      </div>
+      <DynamicHeader />
+      <Navbar />
 
-      <div className="CardsP g-20">
-        {chunks.map((group, index) => (
-          <Card key={index} variant="soft" className="Card">
-            <CardContent>
-              <p className="fs-18 tc">Departments</p>
-
-              <p className="fs-20 tc">
-                {group[0]} - {group[group.length - 1]}
-              </p>
-
-              <ButtonGroup sx={{ mt: 1, flexWrap: 'wrap' }}>
-                {group.map((letter) => (
+      <div className="cards-container">
+        {groups.map((group) => (
+          <Card key={group.label} variant="soft" className="card">
+            <CardContent className="card-content">
+              
+              {/* Top: Letters */}
+              <ButtonGroup className="letters">
+                {group.letters.map((letter) => (
                   <Button
                     key={letter}
+                    size="sm"
                     variant="outlined"
-                    onClick={() => handleLetterClick(letter)}
+                    onClick={() => handleLetterClick(group.label, letter)}
+                    className="lettersB"
                   >
                     {letter}
                   </Button>
                 ))}
               </ButtonGroup>
 
-              <Button
-                sx={{ mt: 1 }}
-                onClick={() => navigate('/a-f')}
-              >
+              {/* Middle: Text */}
+              <div className="card-text">
+                <p>Checklist, Checknote, Checkorder</p>
+                <p>and Checkreports in Departments</p>
+                <p className="range">{group.label}</p>
+              </div>
+
+              {/* Bottom: Go */}
+              <Button className='GoB' onClick={() => handleGo(group.label)}>
                 Go
               </Button>
+
             </CardContent>
           </Card>
         ))}
