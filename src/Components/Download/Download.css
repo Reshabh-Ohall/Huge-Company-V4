@@ -1,0 +1,17 @@
+.CardsP {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: fit-content;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 150px auto;
+}
+
+.Card {
+  width: fit-content;
+  -webkit-text-fill-color: #1B4B9E;
+}
+
+.desp {
+  margin: 20px 0;
+}

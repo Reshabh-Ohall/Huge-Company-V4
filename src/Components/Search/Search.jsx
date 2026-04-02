@@ -59,7 +59,7 @@ export default function Search() {
           </button>
           <button
             className='sButton pls'
-            onClick={() => navigate("/Download")}
+            onClick={() => navigate("/download")}
           >
             Download
           </button>

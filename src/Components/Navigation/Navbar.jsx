@@ -36,14 +36,14 @@ export default function Navbar() {
 
         {/* Menu */}
         <ul className={`nav-menu effra-500 BC-DBlue ${menuOpen ? "active" : ""}`}>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/Home'>Home</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/About'>About</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/Platform'>Platform</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/Service'>Service</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/Product'>Product</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/Market'>Market</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/Login'>Login</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/Contact'>Contact</a></li>
+          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/home'>Home</a></li>
+          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/about'>About</a></li>
+          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/platform'>Platform</a></li>
+          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/service'>Service</a></li>
+          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/product'>Product</a></li>
+          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/market'>Market</a></li>
+          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/login'>Login</a></li>
+          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/contact'>Contact</a></li>
         </ul>
       </div>
     </header>
