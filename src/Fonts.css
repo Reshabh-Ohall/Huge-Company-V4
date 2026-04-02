@@ -1,0 +1,211 @@
+:root {
+  --effra: "Effra", sans-serif;
+  --pls: "Plus Jakarta Sans", sans-serif;
+}
+
+/* DEFAULTS */
+.effra {
+  font-family: var(--effra);
+  font-weight: 400;
+}
+
+.pls {
+  font-family: var(--pls);
+  font-weight: 400;
+}
+
+/* OPTIONAL WEIGHTS - Effra */
+
+.effra-300 {
+  font-family: var(--effra);
+  font-weight: 300;
+}
+
+.effra-500 {
+  font-family: var(--effra);
+  font-weight: 500;
+}
+
+.effra-700 {
+  font-family: var(--effra);
+  font-weight: 700;
+}
+
+.effra-800 {
+  font-family: var(--effra);
+  font-weight: 800;
+}
+
+
+/* OPTIONAL WEIGHTS  - Plus Jakarta Sans*/
+
+.pls-200 {
+  font-family: var(--pls);
+  font-weight: 200;
+}
+
+.pls-300 {
+  font-family: var(--pls);
+  font-weight: 300;
+}
+
+.pls-500 {
+  font-family: var(--pls);
+  font-weight: 500;
+}
+
+.pls-600 {
+  font-family: var(--pls);
+  font-weight: 600;
+}
+
+.pls-700 {
+  font-family: var(--pls);
+  font-weight: 700;
+}
+
+.pls-800 {
+  font-family: var(--pls);
+  font-weight: 800;
+}
+
+/* =========================
+   FONT SIZE CLASSES
+========================= */
+
+.fs-8 { font-size: 8px ; }
+.fs-9 { font-size: 9px ; }
+.fs-10 { font-size: 10px ; }
+.fs-11 { font-size: 11px ; }
+.fs-12 { font-size: 12px ; }
+.fs-13 { font-size: 13px ; }
+.fs-14 { font-size: 14px ; }
+.fs-15 { font-size: 15px ; }
+.fs-16 { font-size: 16px ; }
+.fs-17 { font-size: 17px ; }
+.fs-18 { font-size: 18px ; }
+.fs-19 { font-size: 19px ; }
+.fs-20 { font-size: 20px ; }
+.fs-21 { font-size: 21px ; }
+.fs-22 { font-size: 22px ; }
+.fs-23 { font-size: 23px ; }
+.fs-24 { font-size: 24px ; }
+.fs-25 { font-size: 25px ; }
+.fs-26 { font-size: 26px ; }
+.fs-27 { font-size: 27px ; }
+.fs-28 { font-size: 28px ; }
+.fs-29 { font-size: 29px ; }
+.fs-30 { font-size: 30px ; }
+.fs-31 { font-size: 31px ; }
+.fs-32 { font-size: 32px ; }
+.fs-33 { font-size: 33px ; }
+.fs-34 { font-size: 34px ; }
+.fs-35 { font-size: 35px ; }
+.fs-36 { font-size: 36px ; }
+.fs-37 { font-size: 37px ; }
+.fs-38 { font-size: 38px ; }
+.fs-39 { font-size: 39px ; }
+.fs-40 { font-size: 40px ; }
+.fs-41 { font-size: 41px ; }
+.fs-42 { font-size: 42px ; }
+.fs-43 { font-size: 43px ; }
+.fs-44 { font-size: 44px ; }
+.fs-45 { font-size: 45px ; }
+.fs-46 { font-size: 46px ; }
+.fs-47 { font-size: 47px ; }
+.fs-48 { font-size: 48px ; }
+.fs-49 { font-size: 49px ; }
+.fs-50 { font-size: 50px ; }
+.fs-51 { font-size: 51px ; }
+.fs-52 { font-size: 52px ; }
+.fs-53 { font-size: 53px ; }
+.fs-54 { font-size: 54px ; }
+.fs-55 { font-size: 55px ; }
+.fs-56 { font-size: 56px ; }
+.fs-57 { font-size: 57px ; }
+.fs-58 { font-size: 58px ; }
+.fs-59 { font-size: 59px ; }
+.fs-60 { font-size: 60px ; }
+.fs-61 { font-size: 61px ; }
+.fs-62 { font-size: 62px ; }
+.fs-63 { font-size: 63px ; }
+.fs-64 { font-size: 64px ; }
+.fs-65 { font-size: 65px ; }
+.fs-66 { font-size: 66px ; }
+.fs-67 { font-size: 67px ; }
+.fs-68 { font-size: 68px ; }
+.fs-69 { font-size: 69px ; }
+.fs-70 { font-size: 70px ; }
+.fs-71 { font-size: 71px ; }
+.fs-72 { font-size: 72px ; }
+
+
+/* =========================
+   GAP CLASSES
+========================= */
+
+.g-8 { gap: 8px ; }
+.g-9 { gap: 9px ; }
+.g-10 { gap: 10px ; }
+.g-11 { gap: 11px ; }
+.g-12 { gap: 12px ; }
+.g-13 { gap: 13px ; }
+.g-14 { gap: 14px ; }
+.g-15 { gap: 15px ; }
+.g-16 { gap: 16px ; }
+.g-17 { gap: 17px ; }
+.g-18 { gap: 18px ; }
+.g-19 { gap: 19px ; }
+.g-20 { gap: 20px ; }
+.g-21 { gap: 21px ; }
+.g-22 { gap: 22px ; }
+.g-23 { gap: 23px ; }
+.g-24 { gap: 24px ; }
+.g-25 { gap: 25px ; }
+.g-26 { gap: 26px ; }
+.g-27 { gap: 27px ; }
+.g-28 { gap: 28px ; }
+.g-29 { gap: 29px ; }
+.g-30 { gap: 30px ; }
+.g-31 { gap: 31px ; }
+.g-32 { gap: 32px ; }
+.g-33 { gap: 33px ; }
+.g-34 { gap: 34px ; }
+.g-35 { gap: 35px ; }
+.g-36 { gap: 36px ; }
+.g-37 { gap: 37px ; }
+.g-38 { gap: 38px ; }
+.g-39 { gap: 39px ; }
+.g-40 { gap: 40px ; }
+.g-41 { gap: 41px ; }
+.g-42 { gap: 42px ; }
+.g-43 { gap: 43px ; }
+.g-44 { gap: 44px ; }
+.g-45 { gap: 45px ; }
+.g-46 { gap: 46px ; }
+.g-47 { gap: 47px ; }
+.g-48 { gap: 48px ; }
+.g-49 { gap: 49px ; }
+.g-50 { gap: 50px ; }
+.g-51 { gap: 51px ; }
+.g-52 { gap: 52px ; }
+.g-53 { gap: 53px ; }
+.g-54 { gap: 54px ; }
+.g-55 { gap: 55px ; }
+.g-56 { gap: 56px ; }
+.g-57 { gap: 57px ; }
+.g-58 { gap: 58px ; }
+.g-59 { gap: 59px ; }
+.g-60 { gap: 60px ; }
+.g-61 { gap: 61px ; }
+.g-62 { gap: 62px ; }
+.g-63 { gap: 63px ; }
+.g-64 { gap: 64px ; }
+.g-65 { gap: 65px ; }
+.g-66 { gap: 66px ; }
+.g-67 { gap: 67px ; }
+.g-68 { gap: 68px ; }
+.g-69 { gap: 69px ; }
+.g-70 { gap: 70px ; }
+.g-71 { gap: 71px ; }
+.g-72 { gap: 72px ; }
