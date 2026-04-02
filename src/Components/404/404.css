@@ -1,0 +1,75 @@
+.nf-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1b4e9b, #454545);
+  font-family: sans-serif;
+}
+
+.nf-card {
+  background: rgba(168, 168, 169, 0.1);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  border: 1px solid rgba(245, 202, 91, 0.2);
+}
+
+.nf-code {
+  font-size: 96px;
+  margin: 0;
+  color: #f5ca5b;
+  font-weight: 800;
+}
+
+.nf-title {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.nf-text {
+  color: #a8a8a9;
+  margin: 15px 0 25px;
+}
+
+.nf-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.nf-btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.nf-btn.primary {
+  background: #f5ca5b;
+  color: #1b4e9b;
+}
+
+.nf-btn.secondary {
+  border: 1px solid #f5ca5b;
+  color: #f5ca5b;
+}
+
+.nf-btn:hover {
+  transform: translateY(-2px);
+}
+
+.nf-links a {
+  margin: 0 8px;
+  color: #a8a8a9;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.nf-links a:hover {
+  color: #f5ca5b;
+}

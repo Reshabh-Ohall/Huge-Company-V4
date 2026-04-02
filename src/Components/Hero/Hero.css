@@ -68,7 +68,7 @@
   display: flex;
   justify-content: center !important;
   gap: 1rem;
-  padding-bottom: 20px;
+  padding: 40px 0;
   flex-wrap: wrap; /* wrap on small screens */
   width: 100%;
 }
