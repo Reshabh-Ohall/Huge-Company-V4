@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./nav.css";
 import CLogo from "./logo.png";
-
+import { Link } from "react-router-dom";
 // Font Awesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
@@ -36,14 +36,14 @@ export default function Navbar() {
 
         {/* Menu */}
         <ul className={`nav-menu effra-500 BC-DBlue ${menuOpen ? "active" : ""}`}>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/home'>Home</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/about'>About</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/platform'>Platform</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/service'>Service</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/product'>Product</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/market'>Market</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/login'>Login</a></li>
-          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='https://hugecompany.in/contact'>Contact</a></li>
+          <li className="menu-hover"><Link className='Menu-Links-Tag BC-DBlue' to='/home/'>Home</Link></li>
+          <li className="menu-hover"><Link className='Menu-Links-Tag BC-DBlue' to='/about/'>About</Link></li>
+          <li className="menu-hover"><Link className='Menu-Links-Tag BC-DBlue' to='/platform/'>Platform</Link></li>
+          <li className="menu-hover"><Link className='Menu-Links-Tag BC-DBlue' to='/service/'>Service</Link></li>
+          <li className="menu-hover"><Link className='Menu-Links-Tag BC-DBlue' to='/product/'>Product</Link></li>
+          <li className="menu-hover"><Link className='Menu-Links-Tag BC-DBlue' to='/market/'>Market</Link></li>
+          <li className="menu-hover"><Link className='Menu-Links-Tag BC-DBlue' to='/login/'>Login</Link></li>
+          <li className="menu-hover"><Link className='Menu-Links-Tag BC-DBlue' to='/contact/'>Contact</Link></li>
         </ul>
       </div>
     </header>

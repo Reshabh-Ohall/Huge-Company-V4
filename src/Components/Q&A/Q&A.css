@@ -1,7 +1,7 @@
 /* ===== BASE (Desktop / ≥ 769px) ===== */
 .Q-A {
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
   gap: 128px;
   width: 100%;
   background-color: #E6EDF5;

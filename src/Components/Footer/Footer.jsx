@@ -6,7 +6,7 @@ export default function Footer() {
 		<div className='Footer'>
 			<div className='Footer-Left'>
 				<img src={pattern} alt="pattern" className='pattern'/>
-				<p className='pls-600 FTaglineC'>Grow Clarity</p>
+				<p className='pls-600 FTaglineC'>Grow Huge</p>
 			</div>
 			<div className='Footer-Links-Div pls-600'>
 				<ul className='Footer-Links'>

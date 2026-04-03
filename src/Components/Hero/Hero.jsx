@@ -5,7 +5,7 @@ export default function Hero() {
 		<div>
 			{/* Top Tagline */}
 			<div className='TaglineP'>
-				<p className='pls-800 TaglineC'>Grow Clarity</p>
+				<p className='pls-800 TaglineC fs-72'>Grow Huge</p>
 			</div>
 
 			{/* Hero Section */}

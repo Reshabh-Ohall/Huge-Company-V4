@@ -14,18 +14,6 @@ export default function QA() {
 						<li>Cum sociis natoque penatibus et magnis dis parturient montes.</li>
 					</ul>
 				</div>
-				<div className='q2'>
-					<h1 className='pls-600 BC-DBlue q2-q'>Why People Trust Us</h1>
-					<p className='pls BC-DBlue q1-a'>We bring clarity to every document with accuracy.</p>
-					<ul className='q2-l pls'>
-						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-						<li>Aenean commodo ligula eget dolor.</li>
-						<li>Aenean massa. Aenean commodo ligula eget dolor.</li>
-						<li>Cum sociis natoque penatibus et magnis dis parturient montes.</li>
-					</ul>
-				</div>
-			</div>
-			<div>
 				<div className='q1'>
 					<h1 className='pls-600 BC-DBlue q1-q'>What We Do</h1>
 					<p className='pls BC-DBlue q1-a'>Help to know the right documents with steps to follow.</p>
@@ -36,8 +24,20 @@ export default function QA() {
 						<li>Cum sociis natoque penatibus et magnis dis parturient montes.</li>
 					</ul>
 				</div>
+			</div>
+			<div>
 				<div className='q2'>
 					<h1 className='pls-600 BC-DBlue q2-q'>Why People Trust Us</h1>
+					<p className='pls BC-DBlue q1-a'>We bring clarity to every document with accuracy.</p>
+					<ul className='q2-l pls'>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Aenean commodo ligula eget dolor.</li>
+						<li>Aenean massa. Aenean commodo ligula eget dolor.</li>
+						<li>Cum sociis natoque penatibus et magnis dis parturient montes.</li>
+					</ul>
+				</div>
+				<div className='q2'>
+					<h1 className='pls-600 BC-DBlue q2-q'>Why It Matters</h1>
 					<p className='pls BC-DBlue q1-a'>We bring clarity to every document with accuracy.</p>
 					<ul className='q2-l pls'>
 						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>

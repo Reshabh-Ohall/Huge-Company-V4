@@ -1,17 +1,119 @@
-.CardsP {
+.cards-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: fit-content;
-  padding: 20px;
+  padding: 24px;
   box-sizing: border-box;
-  margin: 150px auto;
+  margin: 120px auto;
+  gap: 14px;
 }
 
-.Card {
-  width: fit-content;
-  -webkit-text-fill-color: #1B4B9E;
+/* Card */
+.card {
+  width: 340px;
+  height: 280px;
+  display: flex;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #1B4B9E;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.desp {
-  margin: 20px 0;
+/* Hover */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Card content */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 16px;
+}
+
+/* Letters container */
+.letters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Alphabet buttons */
+.lettersB {
+  background-color: #F5CA5B;
+  color: #FFFFFF;
+
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  border: none;
+
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+/* Hover */
+.lettersB:hover {
+  background-color: #1B4B9E;
+  transform: translateY(-1px) scale(1.05);
+}
+
+/* Optional active state */
+.lettersB.active {
+  background-color: #1B4B9E;
+}
+
+/* Middle text */
+.card-text {
+  text-align: center;
+  margin: 10px 0;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+/* Range label */
+.range {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+/* Go Button */
+.GoB {
+  background-color: #F5CA5B;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+/* Go hover */
+.GoB:hover {
+  background-color: #1B4B9E;
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;  /* 1 column */
+    width: 100%;
+    padding: 16px;
+    margin: 100px auto;
+    justify-items: center;
+  }
+
+  .card {
+    width: 90%;     /* full width feel on mobile */
+    max-width: 360px;
+  }
 }

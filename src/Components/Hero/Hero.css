@@ -1,25 +1,26 @@
 /* ==================== TOP TAGLINE ==================== */
 .TaglineP {
-  margin: 0 auto;
+  margin:  25px auto;
+  padding: 0 0 20px 0;
   width: fit-content;
   height: fit-content;
 }
 
 .TaglineC {
   display: inline-block;
-  font-size: 64px;
   background: linear-gradient(to right,
-    #FF6500,
-    #D77945,
-    #D48E71,
-    #C6B355,
-    #FFE500,
-    #87CB33,
-    #0062FF
+    #FF6500 10%,
+    #D77945 15%,
+    #D48E71 18%,
+    #C6B355 30%,
+    #FFE500 40%,
+    #87CB33 50%,
+    #0062FF 95%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+  padding: 50px;
 }
 
 /* ==================== HERO SECTION ==================== */
@@ -66,9 +67,9 @@
 /* ==================== BUTTONS ==================== */
 .buttons-pc {
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
   gap: 1rem;
-  padding-bottom: 20px;
+  padding: 40px 0;
   flex-wrap: wrap; /* wrap on small screens */
   width: 100%;
 }
@@ -115,7 +116,7 @@
   border-bottom: 0.5px solid #e3e3e3;
 
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   font-size: 15px;
@@ -130,6 +131,7 @@
   align-items: center;
   gap: 4px;
   flex-wrap: wrap;
+  margin: 0 260px 0 0;
 }
 
 .letter-title {
