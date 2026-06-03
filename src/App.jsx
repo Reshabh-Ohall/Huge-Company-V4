@@ -1,4 +1,4 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Home from "./Pages/Home"
 import DownloadP from "./Pages/Download"
 import LoginP from "./Pages/Login"
@@ -8,15 +8,22 @@ import 'tachyons';
 import './App.css';
 import './Fonts.css';
 
+function BioRedirect() {
+  window.location.replace('https://bio.hugecompany.in/')
+  return null
+}
+
 function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
         <Route path="/download" element={<DownloadP />} />
         <Route path="/login" element={<LoginP />} />
         <Route path="/register" element={<RegisterP />} />
+        <Route path="/bio" element={<BioRedirect />} />
+        <Route path="/bio/*" element={<BioRedirect />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

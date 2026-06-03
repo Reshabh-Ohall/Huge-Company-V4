@@ -1,4 +1,4 @@
-import NotFoundC from '../Components/404/404'
+import NotFoundC from '../Components/Four-O-Four/Four-O-Four'
 
 export default function NotFound() {
 	return (<NotFoundC />)

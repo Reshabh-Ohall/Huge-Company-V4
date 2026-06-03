@@ -48,6 +48,14 @@
   color: #1B4E9B;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 1.25rem;
+  margin-left: 0;
+}
+
 /* ===== Menu Section ===== */
 .nav-menu {
   display: flex;

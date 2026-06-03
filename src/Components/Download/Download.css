@@ -92,14 +92,17 @@
   font-weight: 600;
   border: none;
   cursor: pointer;
-
   transition: all 0.2s ease;
+  box-sizing: border-box;
 }
 
 /* Go hover */
 .GoB:hover {
-  background-color: #1B4B9E;
+  background-color: #FFFFFF !important;
+  -webkit-text-fill-color: #1B4B9E;
   transform: translateY(-2px);
+  box-sizing: border-box;
+  border: 2px #F5CA5B solid;
 }
 
 

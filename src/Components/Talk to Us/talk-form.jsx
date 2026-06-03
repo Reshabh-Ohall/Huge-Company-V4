@@ -25,7 +25,7 @@ export default function TalkForm({ onClose }) {
               className="talk-input pls"
               variant="plain"
               startDecorator={<span className="talk-code">+91</span>}
-              placeholder="Cell Phone"
+              placeholder="Mobile Number"
               type="tel"
               required
               sx={{ width: '100%' }}

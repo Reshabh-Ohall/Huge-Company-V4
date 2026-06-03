@@ -1,5 +1,5 @@
 /* ==================== TOP TAGLINE ==================== */
-.TaglineP {
+/*.TaglineP {
   margin:  25px auto;
   padding: 0 0 20px 0;
   width: fit-content;
@@ -21,7 +21,7 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
   padding: 50px;
-}
+}*/
 
 /* ==================== HERO SECTION ==================== */
 .Hero {

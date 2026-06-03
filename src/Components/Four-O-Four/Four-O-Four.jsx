@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./404.css";
+import "./Four-O-Four.css";
 
 export default function NotFoundC() {
   return (
@@ -8,7 +8,7 @@ export default function NotFoundC() {
         <h1 className="nf-code">404</h1>
         <h2 className="nf-title">Page Not Found</h2>
         <p className="nf-text">
-          The page you're looking for doesn't exist or has been moved.
+          This page is under development or doesn’t exist yet.
         </p>
 
         <div className="nf-actions">

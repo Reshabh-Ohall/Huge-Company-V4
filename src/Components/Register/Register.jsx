@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { Sheet, Typography, Input, Button, Link } from "@mui/joy";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
+import { setAuthUser } from "../../auth";
 
 export default function Register() {
+  const navigate = useNavigate();
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -15,7 +17,11 @@ export default function Register() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(form);
+    setAuthUser({
+      email: form.email,
+      name: form.name || form.email.split("@")[0] || "Account User"
+    });
+    navigate("/bio");
   };
 
   return (
@@ -35,7 +41,7 @@ export default function Register() {
           Sign Up
         </Typography>
 
-        <form onSubmit={handleSubmit} className="flex flex-column gap-2">
+        <form onSubmit={handleSubmit} className="flex flex-column g-8">
           <Input
             name="name"
             placeholder="Name"
