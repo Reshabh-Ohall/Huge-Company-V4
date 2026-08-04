@@ -1,0 +1,150 @@
+.inquiry-page {
+  position: relative;
+  min-height: 100vh;
+  padding: 24px;
+  font-family: var(--pls);
+}
+
+.inquiry-brand {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+.inquiry-shell {
+  width: 100%;
+  min-height: calc(100vh - 48px);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 140px;
+}
+
+.inquiry-panel {
+  width: min(100%, 520px);
+  padding: 32px;
+  border-radius: 8px;
+  font-family: var(--pls);
+}
+
+.inquiry-logo {
+  width: 68px;
+  height: 68px;
+  object-fit: contain;
+}
+
+.inquiry-brand-copy {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.inquiry-brand-name {
+  font-family: var(--pls);
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.inquiry-brand-tagline {
+  font-family: var(--pls);
+  font-size: 15px;
+  font-weight: 500;
+  padding-top: 4px;
+}
+
+.inquiry-title {
+  margin-bottom: 8px;
+  text-align: center;
+  font-family: var(--pls);
+  font-weight: 700;
+}
+
+.inquiry-copy {
+  color: #454545;
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: var(--pls);
+}
+
+.inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.inquiry-field-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.inquiry-form input,
+.inquiry-form textarea,
+.inquiry-form [role="combobox"] {
+  background-color: transparent;
+  font-family: var(--pls);
+}
+
+.inquiry-form .MuiInput-root,
+.inquiry-form .MuiTextarea-root,
+.inquiry-form .MuiSelect-root {
+  background-color: #ffffff;
+  font-family: var(--pls);
+}
+
+.inquiry-error {
+  color: #ffb4a8;
+  text-align: center;
+}
+
+.inquiry-thank-you {
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 560px) {
+  .inquiry-page {
+    padding: 16px;
+  }
+
+  .inquiry-brand {
+    top: 16px;
+    left: 16px;
+    gap: 10px;
+  }
+
+  .inquiry-shell {
+    min-height: calc(100vh - 32px);
+    padding-top: 112px;
+  }
+
+  .inquiry-panel {
+    padding: 24px;
+  }
+
+  .inquiry-logo {
+    width: 54px;
+    height: 54px;
+  }
+
+  .inquiry-brand-name {
+    font-size: 24px;
+  }
+
+  .inquiry-brand-tagline {
+    font-size: 13px;
+  }
+
+  .inquiry-field-row {
+    grid-template-columns: 1fr;
+  }
+}

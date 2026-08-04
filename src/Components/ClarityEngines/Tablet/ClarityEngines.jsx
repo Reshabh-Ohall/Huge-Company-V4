@@ -9,7 +9,9 @@ export default function ClarityEngines() {
 
       {/* First row with AIM and VEY */}
       <div className="Engines1 pls center">
-        <div className="AIM"><h1>AIM Logic</h1></div>
+        <div className="AIM">
+          <h1>Platform</h1>
+        </div>
         <div className="VEY"><h1>VEY Formula</h1></div>
       </div>
 

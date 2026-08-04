@@ -4,6 +4,7 @@ import DownloadP from "./Pages/Download"
 import LoginP from "./Pages/Login"
 import RegisterP from "./Pages/Register"
 import NotFound from "./Pages/NotFound"
+import InquiryP from "./Pages/Inquiry"
 import 'tachyons';
 import './App.css';
 import './Fonts.css';
@@ -23,7 +24,7 @@ function App() {
         <Route path="/login" element={<LoginP />} />
         <Route path="/register" element={<RegisterP />} />
         <Route path="/bio" element={<BioRedirect />} />
-        <Route path="/bio/*" element={<BioRedirect />} />
+        <Route path="/inquiry" element={<InquiryP />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

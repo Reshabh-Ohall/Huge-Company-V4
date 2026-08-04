@@ -13,7 +13,7 @@ export default function NotFoundC() {
 
         <div className="nf-actions">
           <Link to="/home/" className="nf-btn primary">Go Home</Link>
-          <Link to="/contact/" className="nf-btn secondary">Contact</Link>
+          <a href="mailto:namastehuge@gmail.com" className="nf-btn secondary">Contact</a>
         </div>
 
         <div className="nf-links">

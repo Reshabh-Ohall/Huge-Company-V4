@@ -22,11 +22,9 @@ export default function Navbar() {
                   <strong className="effra-800">Huge</strong>
                 </h1>
               </span>
-              <span className='BC-DBlue'>
-                <p className='effra'>
-                  Auto Systems for Documents
-                </p>
-              </span>
+              <p className='effra BC-Black fs-20'>
+                  A <span className='BC-DBlue'>Bamboo </span>Company
+              </p>
             </span>
           </Link>
         </div>
@@ -52,7 +50,7 @@ export default function Navbar() {
           <li className="menu-hover"><Link className='Menu-Links-Tag BC-DBlue' to='/product'>Product</Link></li>
           <li className="menu-hover"><Link className='Menu-Links-Tag BC-DBlue' to='/market'>Market</Link></li>
           <li className="menu-hover"><Link className='Menu-Links-Tag BC-DBlue' to='/login'>Login</Link></li>
-          <li className="menu-hover"><Link className='Menu-Links-Tag BC-DBlue' to='/contact'>Contact</Link></li>
+          <li className="menu-hover"><a className='Menu-Links-Tag BC-DBlue' href='mailto:namastehuge@gmail.com'>Contact</a></li>
         </ul>
       </div>
     </header>

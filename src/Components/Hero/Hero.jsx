@@ -1,50 +1,32 @@
+import { Link } from 'react-router-dom'
 import './Hero.css'
 
 export default function Hero() {
 	return (
 		<div>
-			{/* Top Tagline */}
-			{/*<div className='TaglineP'>
-				<p className='pls-800 TaglineC fs-72'></p>
-			</div>*/}
-
-			{/* Hero Section */}
+			{/* Hero Section Banner */}
 			<div className='Hero mt6'>
-				<h1 className='S1 pls-700'>Bharat's Clarity Company.</h1>
-				<h3 className='S2 pls-700'>Define, Verify, Decide — with Confidence</h3>
-				{/*<h5 className='S3 pls-700'>“100% document clarity across 100+ departments.”</h5>*/}
-
-				{/* Paragraph */}
-				<div className="P-box">
-					<p className="P1 pls-200">
-						Huge Company brings clarity to documents by defining their name, purpose, issuer, and owner — helping people and businesses make confident decisions.
-					</p>
+				
+				{/* Main block combining the yellow accent bar and the copy blocks */}
+				<div className='hero-content-wrapper'>
+					<span className='vertical-line'></span>
+					
+					<div className='heading-text-group'>
+						<h1 className='S1 pls-700 pt4 pb4'>Making products and intelligence for documents</h1>
+						<h3 className='S2 pls-700 pb4'> Building infrastruture for Document Ecosystem</h3>
+					</div>
 				</div>
 
-				{/* Buttons */}
+				{/* Buttons Block */}
 				<div className='buttons-pc center'>
-					<button 
-						onClick={() => window.location.href='#'} 
-						className='Define pls'>
-						Define My Document
-					</button>
-					<button 
-						onClick={() => window.location.href='#'} 
-						className='VEY-button pls'>
-						Verify Everything Yourself
-					</button>
+					<Link to='/product' className='Define pls'>
+						See our Products
+					</Link>
+					<Link to='/service' className='VEY-button pls'>
+						Get a Service
+					</Link>
 				</div>
 			</div>
-
-			{/* Letter Bar */}
-			{/*<div className='Letter pls-500'>
-			  <div className="letter-left">
-			    From the Founders Desk — <span className="letter-title BC-DBlue">The Huge Letter</span>
-			  </div>
-			  <div className="letter-right">
-			    <a href="#" className="read-now">Read Now</a>
-			  </div>
-			</div>*/}
 		</div>
 	)
 }
