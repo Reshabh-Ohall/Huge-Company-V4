@@ -209,3 +209,13 @@
 .g-70 { gap: 70px ; }
 .g-71 { gap: 71px ; }
 .g-72 { gap: 72px ; }
+
+
+/* =========================
+   Style CLASSES
+========================= */
+
+.bd { text-decoration: bold;   }
+.ital { text-decoration: italic; }
+.u { text-decoration: underline; }
+.del, .strike { text-decoration: line-through; }

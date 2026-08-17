@@ -11,6 +11,15 @@
   justify-content: center;
 }
 
+/* =========================
+   Style CLASSES
+========================= */
+
+.bd { text-decoration: bold; font-weight: 700; }
+.ital { text-decoration: italic; font-weight: 700; }
+.u { text-decoration: underline; font-weight: 700; }
+.del, .strike { text-decoration: line-through; font-weight: 700; }
+
 /* Engines wrapper rows */
 .Engines,
 .Engines-Box {
@@ -47,10 +56,10 @@
 }
 
 /* Button Colors */
-.AIM {background: #1b4e9b; color: #ffffff;}
-.VEY {background: #1b4e9b; color: #ffffff;}
-.DSCORE {background: #1b4e9b; color: #ffffff;}
-.DIP {background: #1b4e9b; color: #ffffff;}
+.AIM {background: #1B4E9B; color: #FFFFFF;}
+.VEY {background: #1B4E9B; color: #FFFFFF;}
+.DSCORE {background: #1B4E9B; color: #FFFFFF;}
+.DIP {background: #1B4E9B; color: #FFFFFF;}
 
 /* BOXES */
 .BoxA, .BoxB, .BoxC, .BoxD {
@@ -78,10 +87,10 @@
 }
 
 /* Box Colors */
-.BoxA { background: #FEF0E7; border: 1px solid #F8690C; }
-.BoxB { background: #FEFAEF; border: 1px solid #F4CA61; }
-.BoxC { background: #EEF6EF; border: 1px solid #59A662; }
-.BoxD { background: #E6F0FE; border: 1px solid #0A69F1; }
+.BoxA { background: #bbcae1; border: 1px solid #1B4E9B; }
+.BoxB { background: #bbcae1; border: 1px solid #1B4E9B; }
+.BoxC { background: #bbcae1; border: 1px solid #1B4E9B; }
+.BoxD { background: #bbcae1; border: 1px solid #1B4E9B; }
 
 
 /********** <= 1440px (DESKTOP WIDE) **********/

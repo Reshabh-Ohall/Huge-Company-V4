@@ -1,3 +1,5 @@
+// Desktop and TeleVision
+
 import './ClarityEngines.css'
 
 export default function ClarityEngines() {
@@ -26,25 +28,25 @@ export default function ClarityEngines() {
 				</div>
 			</div>
 
-			<div className='Engines-Box center pls fs-15'>
+			<div className='Engines-Box center pls'>
 				<div className='BoxA'>
 					<p>
-						Ready-to-work <span className='bold'>Talent</span> and <span className='bold'>Decision-Makers</span> for <span className='bold'>Administration Work.</span>
+						Ready-to-work <span className='bd'>Talent</span> and <span className='bd'>Decision-Makers</span> for <span className='bd'>Administration Work.</span>
 					</p>
 				</div>
 				<div className='BoxB'>
 					<p>
-						Information <span className='bold'>Systems</span> and <span className='bold'>Control</span> for <span className='bold'>Powerful Leadership.</span>
+						Information <span className='bd'>Systems</span> and <span className='bd'>Control</span> for <span className='bd'>Powerful Leadership.</span>
 					</p>
 				</div>
 				<div className='BoxC'>
 					<p>
-						Businesses with <span className='bold'>Ready Setup</span> and <span className='bold'>Certified</span> for <span className='bold'>Direct Takeover.</span>
+						Businesses with <span className='bd'>Ready Setup</span> and <span className='bd'>Certified</span> for <span className='bd'>Direct Takeover.</span>
 					</p>
 				</div>
 				<div className='BoxD'>
 					<p>
-						New <span className='bold'>Customers</span> and <span className='bold'>Partnerships</span> through <span className='bold'>Trade Exhibitions</span>
+						New <span className='bd'>Customers</span> and <span className='bd'>Partnerships</span> through <span className='bd'>Trade Exhibitions</span>
 					</p>
 				</div>
 			</div>

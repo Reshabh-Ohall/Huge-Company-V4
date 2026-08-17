@@ -1,25 +1,61 @@
-import './ClarityEngines.css'
+// Mobile
+
+import "./ClarityEngines.css";
 
 export default function ClarityEngines() {
   return (
-    <div className='ClarityEngines-PC'>
-      <div className='des center'>
-        <h1 className='pls-600 fs-20'>The Four Engines of Clarity</h1>
+    <div className="ClarityEngines-PC">
+      <div className="des center">
+        <h1 className="pls-600">Our Work</h1>
       </div>
 
-      <div className='Engines pls '>
-        <div className='AIM fs-12'><h1>AIM Logic</h1></div>
-        <div className='BoxA fs-12'><h1>AIM Logic</h1></div>
+      <div className="Engines pls">
 
-        <div className='VEY fs-11'><h1>VEY Formula</h1></div>
-        <div className='BoxB fs-11'><h1>VEY Formula</h1></div>
+        <div className="AIM">
+          <h1>Platform</h1>
+          <h3>Document Ecosystem</h3>
+        </div>
 
-        <div className='DSCORE fs-9'><h1>DSCORE Index</h1></div>
-        <div className='BoxC fs-9'><h1>DSCORE Index</h1></div>
+        <div className="BoxA">
+          <p>
+            Ready-to-work <span className="bd">Talent </span>and <span className="bd">Decision-Makers </span>for <span className="bd">Administration Work.</span>
+          </p>
+        </div>
 
-        <div className='DIP fs-9'><h1>DIP Ecosystem</h1></div>
-        <div className='BoxD fs-9'><h1>DIP Ecosystem</h1></div>
+        <div className="VEY">
+          <h1>Service</h1>
+          <h3>Intelligence Reports</h3>
+        </div>
+
+        <div className="BoxB">
+          <p>
+            Information <span className="bd">Systems </span>and<span className="bd">Control </span>for <span className="bd">Powerful Leadership.</span>
+          </p>
+        </div>
+
+        <div className="DSCORE">
+          <h1>Product</h1>
+          <h3>Readymade Businesses</h3>
+        </div>
+
+        <div className="BoxC">
+          <p>
+            Businesses with <span className="bd">Ready Setup</span>and <span className="bd">Certified</span>for <span className="bd">Direct Takeover.</span>
+          </p>
+        </div>
+
+        <div className="DIP">
+          <h1>Market</h1>
+          <h3>Trade Exhibitions</h3>
+        </div>
+
+        <div className="BoxD">
+          <p>
+            New <span className="bd">Customers </span>and <span className="bd">Partnerships </span>through <span className="bd">Trade Exhibitions</span>.
+          </p>
+        </div>
+
       </div>
     </div>
-  )
+  );
 }

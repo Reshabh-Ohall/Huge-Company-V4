@@ -1,140 +1,221 @@
 /* =========================
-   MOBILE 425px → 320px
+   Style CLASSES
 ========================= */
-@media (max-width: 425px) {
 
-  /* ===== CONTAINER ===== */
-  .ClarityEngines-PC {
-    width: 100%;
-    padding: 12px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    box-sizing: border-box;
+.bd { text-decoration: bold; font-weight: 700; }
+.ital { text-decoration: italic; font-weight: 700; }
+.u { text-decoration: underline; font-weight: 700; }
+.del, .strike { text-decoration: line-through; font-weight: 700; }
+
+
+/* =====================================
+   MOBILE ≤425px
+===================================== */
+@media (max-width:425px) {
+
+  .ClarityEngines-PC{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    width:100%;
+    padding:12px;
+    margin:0 auto;
+    box-sizing:border-box;
   }
 
-  /* Section heading */
-  .des {
-    display: flex;
-    justify-content: center;
+  .des{
+    display:flex;
+    justify-content:center;
+  }
+
+  .des .pls-600{
+    font-size:14px;
+    text-align:center;
+  }
+
+  .Engines{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px;
+    width:100%;
+    margin:0;
+    padding:0;
+  }
+
+  /* Engine Buttons */
+  .AIM,
+  .VEY,
+  .DSCORE,
+  .DIP{
+    display:flex;
+    flex-direction:column;   /* Fixed: Forces the h1 and h3 to stack vertically on mobile */
+    justify-content:center;
+    align-items:center;
+
+    min-height:52px;
+    padding:10px;
+
+    border-radius:6px;
+    box-sizing:border-box;
+
+    background:#1B4E9B;
+    color:#FFFFFF;
+  }
+
+  /* Target both h1 and h3 headers inside buttons */
+  .Engines h1,
+  .Engines h3 {
+    margin: 0;
+    padding: 0;
     text-align: center;
+    line-height: 1.3;
   }
 
-  /* Section heading font size */
-  .des .pls-600 {
-    font-size: 14px;
+  .Engines h1{
+    font-size:15px;
+    font-weight: 700;
   }
 
-  /* ===== GRID LAYOUT ===== */
-  .Engines {
-    display: grid;
-    grid-template-columns: 1fr; /* Stack vertically */
-    gap: 12px;
-    width: 70%;
-    padding: 0 58px; /* Horizontal padding inside grid */
-    margin: 0 auto;
+  .Engines h3 {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.9;
   }
 
-  /* ===== BUTTONS & BOXES ===== */
-  .AIM, .VEY, .DSCORE, .DIP,
-  .BoxA, .BoxB, .BoxC, .BoxD {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border-radius: 6px;
-    text-align: center;
-    font-size: 13px; /* Use class-specific font size */
-    height: 40px;
-    box-sizing: border-box;
+  /* Description Boxes */
+  .BoxA,
+  .BoxB,
+  .BoxC,
+  .BoxD{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:88px;
+    padding:14px;
+
+    border-radius:6px;
+    box-sizing:border-box;
+
+    background:#bbcae1;
+    border:1px solid #1B4E9B;
   }
 
-  .BoxA, .BoxB, .BoxC, .BoxD {
-    height: 80px;
+  /* Fixed: Changed selector from h1 to p to match your Mobile JSX */
+  .BoxA p,
+  .BoxB p,
+  .BoxC p,
+  .BoxD p{
+    margin:0;
+    text-align:center;
+    line-height:1.4;
+    font-size:13px;
+    color:#1a1a1a;
   }
 
-  /* Colors for buttons */
-  .AIM { background:#F8690B; color:#fff; border:1px solid #F8690B; }
-  .VEY { background:#F3CC5E; color:#000; border:1px solid #F3CC5E; }
-  .DSCORE { background:#58A664; color:#fff; border:1px solid #58A664; }
-  .DIP { background:#0A6AED; color:#fff; border:1px solid #0A6AED; }
-
-  /* Colors for boxes */
-  .BoxA { background:#FEF0E7; border:1px solid #F8690C; }
-  .BoxB { background:#FEFAEF; border:1px solid #F4CA61; }
-  .BoxC { background:#EEF6EF; border:1px solid #59A662; }
-  .BoxD { background:#E6F0FE; border:1px solid #0A69F1; }
 }
 
-/* =========================
-   SMALLER PHONES ≤375px
-========================= */
-@media (max-width: 375px) {
+/* =====================================
+   SMALL PHONES ≤375px
+===================================== */
+@media (max-width:375px){
 
-  .ClarityEngines-PC {
-    padding: 10px;
-    gap: 12px;
+  .ClarityEngines-PC{
+    padding:10px;
+    gap:14px;
   }
 
-  .Engines {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 80%;
-    padding: 0 2px;
-    gap: 10px;
-    margin: 0 auto;
+  .Engines{
+    gap:10px;
   }
 
-  .AIM, .VEY, .DSCORE, .DIP,
-  .BoxA, .BoxB, .BoxC, .BoxD {
-    font-size: 12px;
-    padding: 8px;
-    height: 38px;
+  .AIM,
+  .VEY,
+  .DSCORE,
+  .DIP{
+    min-height:48px;
+    padding:8px;
   }
 
-  .BoxA, .BoxB, .BoxC, .BoxD {
-    height: 70px;
+  .BoxA,
+  .BoxB,
+  .BoxC,
+  .BoxD{
+    min-height:78px;
+    padding:12px;
   }
 
-  /* Section heading font size */
-  .des .pls-600 {
-    font-size: 13px;
+  .des .pls-600{
+    font-size:13px;
   }
+
+  .Engines h1{
+    font-size:14px;
+  }
+  
+  .Engines h3{
+    font-size:11px;
+  }
+
+  /* Fixed: Changed selector from h1 to p */
+  .BoxA p,
+  .BoxB p,
+  .BoxC p,
+  .BoxD p{
+    font-size:12px;
+  }
+
 }
 
-/* =========================
-   SMALLEST PHONES ≤320px
-========================= */
-@media (max-width: 320px) {
+/* =====================================
+   EXTRA SMALL ≤320px
+===================================== */
+@media (max-width:320px){
 
-  .ClarityEngines-PC {
-    padding: 8px;
-    gap: 10px;
+  .ClarityEngines-PC{
+    padding:8px;
+    gap:12px;
   }
 
-  .Engines {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 90%;
-    padding: 0 2px;
-    gap: 8px;
-    margin: 0 auto;
+  .Engines{
+    gap:8px;
   }
 
-  .AIM, .VEY, .DSCORE, .DIP,
-  .BoxA, .BoxB, .BoxC, .BoxD {
-    font-size: 11px;
-    padding: 6px;
-    height: 35px;
+  .AIM,
+  .VEY,
+  .DSCORE,
+  .DIP{
+    min-height:44px;
+    padding:6px;
   }
 
-  .BoxA, .BoxB, .BoxC, .BoxD {
-    height: 60px;
+  .BoxA,
+  .BoxB,
+  .BoxC,
+  .BoxD{
+    min-height:70px;
+    padding:10px;
   }
 
-  /* Section heading font size */
-  .des .pls-600 {
-    font-size: 12px;
+  .des .pls-600{
+    font-size:12px;
   }
+
+  .Engines h1{
+    font-size:13px;
+  }
+  
+  .Engines h3{
+    font-size:10px;
+  }
+
+  /* Fixed: Changed selector from h1 to p */
+  .BoxA p,
+  .BoxB p,
+  .BoxC p,
+  .BoxD p{
+    font-size:11px;
+    line-height:1.3;
+  }
+
 }

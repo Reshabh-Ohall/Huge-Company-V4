@@ -4,10 +4,10 @@ import pattern from './pattern.svg'
 export default function Footer() {
 	return (
 		<div className='Footer'>
-			<div className='Footer-Left'>
-				<img src={pattern} alt="pattern" className='pattern'/>
-				<p className='pls-600 FTaglineC'></p>
-			</div>
+			{/*<div className='Footer-Left'>*/}
+				{/*<img src={pattern} alt="pattern" className='pattern'/>*/}
+				{/*<p className='pls-600 FTaglineC'>Grow Clarity</p>*/}
+			{/*</div>*/}
 			<div className='Footer-Links-Div pls-600'>
 				<ul className='Footer-Links'>
 					<li><a className='Footer-Links-Tag' href='https://hugecompany.in/Home'>Home</a></li>
